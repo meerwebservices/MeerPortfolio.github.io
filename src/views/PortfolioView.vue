@@ -1,13 +1,24 @@
 <template>
-  <div class="Portfolio">
-    <h1 class="text-center my-3">This Is Portfolio Page</h1>
-  </div>
-</template>
 
+    <section id="Portfolio">
+      <div class="container">
+        <div class="section-title">
+          <strong class="h4">PORTFOLIO</strong>
+          <h2>our latest <span>Work</span></h2>
+        </div>
+        <!-- PortfolioGallery Component -->
+        <PortfolioGallery></PortfolioGallery>
+      </div>
+    </section>
+</template>
 <script>
+import PortfolioGallery from "@/components/PortfolioGallery";
+
 export default {
   name: "PortfolioView",
-  components: {},
+  components: {
+    PortfolioGallery
+  },
   data() {
     return {};
   },

@@ -270,7 +270,60 @@
     }
   }
 }
-
+/*--Portfolio Page Style--*/
+#Portfolio{
+  padding: 45px 0;
+  .section-title{
+    margin-bottom: 35px;
+  }
+}
+/*--Contact Page Style--*/
+#ContactUs{
+  padding: 75px 0;
+  .contact-info{
+    h3{
+      font-size: 22px;
+      color: $secondary;
+      font-weight: 500;
+      margin: 0 0 40px;
+    }
+    .contact-info-item{
+      position: relative;
+      padding-left: 55px;
+      margin-bottom: 30px;
+      @media screen and (max-width: 376px){
+        padding-left: 48px;
+      }
+      i{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        font-size: 16px;
+        color: $primary;
+        border: 1px solid $primary;
+        text-align: center;
+        line-height: 38px;
+      }
+      h4{
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 10px;
+        color: $secondary;
+        text-transform: capitalize;
+      }
+      p{
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;
+        line-height: 26px;
+        color: $text-color;
+      }
+    }
+  }
+}
 
 
 
