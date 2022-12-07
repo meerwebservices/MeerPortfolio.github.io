@@ -8,16 +8,19 @@
         </div>
         <!-- PortfolioGallery Component -->
         <PortfolioGallery></PortfolioGallery>
+<!--        <GallerySet/>-->
       </div>
     </section>
 </template>
 <script>
 import PortfolioGallery from "@/components/PortfolioGallery";
+// import GallerySet from "@/components/GallerySet";
 
 export default {
   name: "PortfolioView",
   components: {
-    PortfolioGallery
+    PortfolioGallery,
+    // GallerySet
   },
   data() {
     return {};

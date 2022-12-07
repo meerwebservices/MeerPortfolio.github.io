@@ -3,17 +3,16 @@
     <!-- filter btn -->
     <div class="row">
       <ul class="filter-btn">
-        <li class="active">All</li>
-        <li>HTML/CSS</li>
-        <li>VUE JS</li>
-        <li>REACT JS</li>
-        <li>WORDPRESS</li>
+        <li @click="filter('all')" :class="{active: selected === 'all'}">All</li>
+        <li v-for="Button in Buttons" :key="Button" @click="filter(Button)" :class="{active: selected === Button}">{{Button}}</li>
       </ul>
     </div>
     <!-- portfolio items -->
     <div class="row mt-5">
-      <div class="col-lg-3 col-md-4 col-sm-6 wordpress mt-4" v-for="item in items" :key="item">
-        <div class="work-image">
+      <div class="col-lg-3 col-md-4 col-sm-6 mt-4"
+           v-for="item in items" :key="item"
+      >
+        <div class="work-image"  v-if="selected === item.cat || selected === 'all'">
           <img :src="require(`../assets/images/portfolio/${item.img}`)" :alt="item.alt"/>
         </div>
       </div>
@@ -26,42 +25,57 @@ export default {
   name: "PortfolioGallery",
   data() {
     return {
+      Buttons:[
+        'HTML/CSS',
+        'VUE JS',
+        'REACT JS',
+        'WORDPRESS',
+      ],
+      selected: 'all',
       items: [
         {
           img: "portfolio-1.jpg",
           alt:"Img-1",
+          cat:'HTML/CSS'
         },
         {
           img: "portfolio-2.jpg",
           alt:"Img-2",
+          cat:'HTML/CSS'
         },
         {
           img: "portfolio-3.jpg",
           alt:"Img-3",
+          cat:'VUE JS',
         },
         {
           img: "portfolio-4.jpg",
           alt:"Img-4",
+          cat:'VUE JS',
         },
         {
           img: "portfolio-5.jpg",
           alt:"Img-5",
+          cat: 'REACT JS',
         },
         {
           img: "portfolio-6.jpg",
           alt:"Img-6",
-        },
-        {
-          img: "portfolio-4.jpg",
-          alt:"Img-4",
+          cat: 'REACT JS',
         },
         {
           img: "portfolio-2.jpg",
           alt:"Img-2",
+          cat:'WORDPRESS',
         },
       ],
     }
-  }
+  },
+  methods: {
+    filter(selection) {
+      this.selected = selection;
+    }
+  },
 }
 </script>
 <style lang="scss" scoped>
