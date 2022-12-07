@@ -11,8 +11,10 @@
     <div class="row mt-5">
       <div class="col-lg-3 col-md-4 col-sm-6 mt-4"
            v-for="item in items" :key="item"
+           v-show="selected === item.cat || selected === 'all'"
+           :class="'preview ' + item.cat"
       >
-        <div class="work-image"  v-if="selected === item.cat || selected === 'all'">
+        <div class="work-image" >
           <img :src="require(`../assets/images/portfolio/${item.img}`)" :alt="item.alt"/>
         </div>
       </div>
@@ -25,13 +27,13 @@ export default {
   name: "PortfolioGallery",
   data() {
     return {
+      selected: 'all',
       Buttons:[
         'HTML/CSS',
         'VUE JS',
         'REACT JS',
         'WORDPRESS',
       ],
-      selected: 'all',
       items: [
         {
           img: "portfolio-1.jpg",
@@ -74,7 +76,7 @@ export default {
   methods: {
     filter(selection) {
       this.selected = selection;
-    }
+    },
   },
 }
 </script>
@@ -118,6 +120,14 @@ export default {
       width: 100%;
       object-fit: cover;
     }
+  }
+  .preview{
+    opacity: 0;
+    transform: rotate(10deg);
+    animation: appear .8s ease-in-out forwards;
+  }
+  @keyframes appear {
+    to {opacity: 1; transform: rotate(0deg);}
   }
 }
 </style>
