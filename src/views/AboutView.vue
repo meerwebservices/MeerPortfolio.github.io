@@ -24,7 +24,7 @@
                <li> <i class="fa fa-phone"></i><span>Phone:</span>+92 323 6055044</li>
                <li> <i class="fa fa-map-marker"></i><span>Location:</span>Faisalabad, Punjab, Pak</li>
              </ul>
-             <a href="#" class="btn-style btn-1">Hire Me</a>
+             <a href="../public/Resume/FEDR.pdf" class="btn-style btn-1">Download Resume</a>
            </div>
          </div>
          <div class="col-lg-6 col-xl-5 m-lg-auto align-self-center">
@@ -45,6 +45,9 @@ export default {
   components: {SkillsBar},
   data() {
     return {};
+  },
+  methods:{
+
   },
 };
 </script>

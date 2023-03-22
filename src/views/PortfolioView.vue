@@ -17,7 +17,7 @@ import PortfolioGallery from "@/components/PortfolioGallery";
 export default {
   name: "PortfolioView",
   components: {
-    PortfolioGallery
+    PortfolioGallery,
   },
   data() {
     return {};

@@ -7,7 +7,7 @@
       </div>
       <!-- Contact Us Form Section     -->
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-5 col-md-6">
           <div class="contact-info" >
             <h3>For Any Queries and Support</h3>
             <div class="contact-info-item" v-for="contact in contacts" :key="contact">
@@ -17,8 +17,7 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-8 col-md-6">
+        <div class="col-lg-7 col-md-6">
           <div class="contact-form">
             <form action="">
               <div class="row">
@@ -80,8 +79,8 @@ export default {
       contacts:[
         {
           icon:"fas fa-location-arrow",
-          Heading:"Company Location",
-          Info:"Nishatabad, Faisalabad",
+          Heading:"Address",
+          Info:"Faisalabad, Punjab",
         },
         {
           icon:"fas fa-envelope",
