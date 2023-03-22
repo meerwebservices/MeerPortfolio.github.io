@@ -62,13 +62,13 @@ export default {
         },
         {
           Icon: "fas fa-code",
-          Heading: "WORDPRESS",
-          Information: "I Will Convert Your Design To WordPress Website With Elementor"
+          Heading: "HTML TO WORDPRESS",
+          Information: "I will Convert Your Html Web To WordPress Website."
         },
         {
           Icon: "fas fa-code",
-          Heading: "CUSTOM WORDPRESS",
-          Information: "I will Convert Your Design To Custom WordPress Website."
+          Heading: "WORDPRESS",
+          Information: "I Will Convert Your Design To WordPress Website With Elementor"
         },
         {
           Icon: "fas fa-code",

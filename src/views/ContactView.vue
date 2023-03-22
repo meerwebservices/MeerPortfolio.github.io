@@ -79,8 +79,8 @@ export default {
       contacts:[
         {
           icon:"fas fa-location-arrow",
-          Heading:"Company Location",
-          Info:"Nishatabad, Faisalabad",
+          Heading:"Address",
+          Info:"Faisalabad, Punjab",
         },
         {
           icon:"fas fa-envelope",

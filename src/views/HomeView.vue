@@ -10,21 +10,21 @@
               <h1>GHULAM MEER JILANI</h1>
               <p>A Freelance UI Designer & Web Developer</p>
               <div class="home-btn">
-                <a href="#" class="btn-style btn-1">view my work</a>
+                <router-link to="/Portfolio" class="btn-style btn-1">view my work</router-link>
               </div>
               <div class="social-icon">
                 <ul>
                   <li>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/ghulammeerjilani"><i class="fab fa-facebook-f"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.twitter.com/ghulammeerjilani"><i class="fab fa-twitter"></i></a>
                   </li>
                   <li>
                     <a href="#"><i class="fab fa-whatsapp"></i></a>
                   </li>
                   <li>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://pk.linkedin.com/in/ghulammeerjilani"><i class="fab fa-linkedin"></i></a>
                   </li>
                 </ul>
               </div>
