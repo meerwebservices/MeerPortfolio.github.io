@@ -24,7 +24,7 @@
                <li> <i class="fa fa-phone"></i><span>Phone:</span>+92 323 6055044</li>
                <li> <i class="fa fa-map-marker"></i><span>Location:</span>Faisalabad, Punjab, Pak</li>
              </ul>
-             <a href="#" @click="downloadPDF" class="btn-style btn-1">Download Resume</a>
+             <a href="../assets/cv/Resume.pdf" @click="downloadPDF" class="btn-style btn-1">Download Resume</a>
            </div>
          </div>
          <div class="col-lg-6 col-xl-5 m-lg-auto align-self-center">
