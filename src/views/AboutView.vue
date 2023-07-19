@@ -49,8 +49,7 @@ export default {
   methods:{
     downloadPDF() {
       // Replace 'path/to/pdf/file.pdf' with the actual path to your PDF file
-      const fileUrl = 'src/assets/cv/Resume.pdf';
-
+      const fileUrl = '/Resume.pdf';
       // Create a temporary <a> element
       const link = document.createElement('a');
       link.href = fileUrl;
