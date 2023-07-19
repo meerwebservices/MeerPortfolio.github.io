@@ -24,7 +24,7 @@
                <li> <i class="fa fa-phone"></i><span>Phone:</span>+92 323 6055044</li>
                <li> <i class="fa fa-map-marker"></i><span>Location:</span>Faisalabad, Punjab, Pak</li>
              </ul>
-             <a href="../public/Resume/FEDR.pdf" class="btn-style btn-1">Download Resume</a>
+             <a href="#" @click="downloadPDF" class="btn-style btn-1">Download Resume</a>
            </div>
          </div>
          <div class="col-lg-6 col-xl-5 m-lg-auto align-self-center">
@@ -47,7 +47,18 @@ export default {
     return {};
   },
   methods:{
+    downloadPDF() {
+      // Replace 'path/to/pdf/file.pdf' with the actual path to your PDF file
+      const fileUrl = 'assets/cv/Resume.pdf';
 
+      // Create a temporary <a> element
+      const link = document.createElement('a');
+      link.href = fileUrl;
+      link.download = 'Resume.pdf'; // Optional: Specify the desired filename
+
+      // Simulate a click on the link to trigger the download
+      link.click();
+    }
   },
 };
 </script>
