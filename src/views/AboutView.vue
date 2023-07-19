@@ -24,7 +24,7 @@
                <li> <i class="fa fa-phone"></i><span>Phone:</span>+92 323 6055044</li>
                <li> <i class="fa fa-map-marker"></i><span>Location:</span>Faisalabad, Punjab, Pak</li>
              </ul>
-             <a href="../assets/cv/Resume.pdf" @click="downloadPDF" class="btn-style btn-1">Download Resume</a>
+             <button @click="downloadPDF" class="btn-style btn-1">Download Resume</button>
            </div>
          </div>
          <div class="col-lg-6 col-xl-5 m-lg-auto align-self-center">
@@ -49,7 +49,7 @@ export default {
   methods:{
     downloadPDF() {
       // Replace 'path/to/pdf/file.pdf' with the actual path to your PDF file
-      const fileUrl = 'assets/cv/Resume.pdf';
+      const fileUrl = 'src/assets/cv/Resume.pdf';
 
       // Create a temporary <a> element
       const link = document.createElement('a');
