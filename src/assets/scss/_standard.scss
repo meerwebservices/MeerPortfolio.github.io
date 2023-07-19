@@ -1,9 +1,11 @@
 /* Imported Mixin */
 @import "mixin";
 /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap');
 $clicker-Script: 'Clicker Script', sans-serif;
 $ProximaNova: 'Proxima Nova', sans-serif;
-$KaushanScript: 'Kaushan Script', sans-serif;
+$KaushanScript: 'Montserrat', sans-serif;
+$montserrat:'Montserrat', sans-serif;
 /* Media Screen */
 $screen-xs: 768px;
 /* Colors Variables */
